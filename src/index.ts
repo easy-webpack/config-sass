@@ -9,8 +9,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
  * extractText: do you want to extract all css to a separate file? boolean, configuration object or instance of ExtractTextPlugin, defaults to true
  * resolveRelativeUrl: boolean or object with parameters
  */
-export = function scss({ filename = '[name].css', allChunks = false, sourceMap = false, extractText = undefined, resolveRelativeUrl = undefined } = {}) {
-  return function scss(this: WebpackConfig): WebpackConfig {
+export = function sass({ filename = '[name].css', allChunks = false, sourceMap = false, extractText = undefined, resolveRelativeUrl = undefined } = {}) {
+  return function sass(this: WebpackConfig): WebpackConfig {
     const loaders = ['style', `css${sourceMap ? '?sourceMap' : ''}`]
 
     if (resolveRelativeUrl) {
@@ -18,7 +18,7 @@ export = function scss({ filename = '[name].css', allChunks = false, sourceMap =
       sourceMap = true // source maps need to be on for this
     }
 
-    loaders.push(`scss${sourceMap ? '?sourceMap' : ''}`)
+    loaders.push(`sass${sourceMap ? '?sourceMap' : ''}`)
 
     const extractCss = extractText === false
     const providedInstance = extractText instanceof ExtractTextPlugin
