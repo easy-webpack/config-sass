@@ -44,11 +44,11 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "resolve-url-loader": "^1.4.4",
     "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "node-sass": "^3.8.0"
   },
   "peerDependencies": {
-    "@easy-webpack/core": "*",
-    "node-sass": "^3.8.0"
+    "@easy-webpack/core": "*"
   },
   "ava": {
     "files": [
