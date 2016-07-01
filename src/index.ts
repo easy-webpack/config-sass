@@ -1,4 +1,4 @@
-import {WebpackConfig, get} from '@easy-webpack/core';
+import {WebpackConfig, get} from '@easy-webpack/core'
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 /**
