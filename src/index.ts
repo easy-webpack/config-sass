@@ -28,7 +28,7 @@ export = function sass({ filename = '[name].css', allChunks = false, sourceMap =
       module: {
         loaders: get(this, 'module.loaders', []).concat([{
           test: /\.scss$/i,
-          loaders: extractCss ? extractText.extract(...loaders) : loaders
+          loaders: extractCss ? extractText.extract(...loaders.slice(1)) : loaders
         }])
       }
     } as WebpackConfig
