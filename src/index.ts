@@ -20,7 +20,7 @@ export = function sass({ filename = '[name].css', allChunks = false, sourceMap =
 
     loaders.push(`sass${sourceMap ? '?sourceMap' : ''}`)
 
-    const extractCss = extractText === false
+    const extractCss = extractText !== false
     const providedInstance = extractText instanceof ExtractTextPlugin
     if (!providedInstance)
       extractText = extractCss ? new ExtractTextPlugin(filename, extractText instanceof Object ? extractText : { allChunks, sourceMap }) : null
