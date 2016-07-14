@@ -7,7 +7,8 @@
     "test": "TS_NODE_FAST=true TS_NODE_NO_PROJECT=true ava",
     "prepublish": "typings install",
     "build": "rimraf dist && tsc -p .",
-    "semantic-release": "npm run build && semantic-release pre && npm publish --access=public && semantic-release post"
+    "semantic-release": "npm run build && semantic-release pre && npm publish --access=public && semantic-release post",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/easy-webpack/config-sass#readme",
   "devDependencies": {
     "ava": "^0.15.2",
+    "greenkeeper-postpublish": "^1.0.0",
     "semantic-release": "^4.3.5",
     "ts-node": "^0.9.3",
     "tslint": "^3.13.0",
