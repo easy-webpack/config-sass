@@ -41,7 +41,7 @@
     "typescript": ">=1.9.0-dev.20160619-1.0 || ^2.0.0"
   },
   "dependencies": {
-    "@easy-webpack/config-css": "^2.3.0",
+    "@easy-webpack/config-css": "^3.0.0",
     "@types/debug": "^0.0.29",
     "@types/lodash": "^4.14.37",
     "@types/node": "^6.0.46",
