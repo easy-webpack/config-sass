@@ -1,4 +1,4 @@
-import {WebpackConfig, get} from '@easy-webpack/core'
+import {WebpackConfigWithMetadata, get} from '@easy-webpack/core'
 import * as easyCss from '@easy-webpack/config-css'
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
