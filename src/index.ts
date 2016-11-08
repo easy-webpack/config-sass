@@ -11,7 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
  * resolveRelativeUrl: boolean or object with parameters
  */
 export = function sass({ filename = '[name].css', allChunks = false, sourceMap = false, extractText = undefined, resolveRelativeUrl = undefined, additionalLoaders = [] } = {}) {
-  additionalLoaders.push(`sass${sourceMap ? '?sourceMap' : ''}`)
+  additionalLoaders.push(`sass-loader${sourceMap ? '?sourceMap' : ''}`)
   return easyCss({ test: /\.(scss|sass)$/i, filename, allChunks, extractText, resolveRelativeUrl, sourceMap, additionalLoaders })
 }
 
