@@ -14,3 +14,4 @@ export = function sass({ filename = '[name].css', allChunks = false, sourceMap =
   additionalLoaders.push(`sass${sourceMap ? '?sourceMap' : ''}`)
   return easyCss({ test: /\.(scss|sass)$/i, filename, allChunks, extractText, resolveRelativeUrl, sourceMap, additionalLoaders })
 }
+
