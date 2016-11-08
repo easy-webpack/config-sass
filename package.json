@@ -31,6 +31,11 @@
   },
   "homepage": "https://github.com/easy-webpack/config-sass#readme",
   "devDependencies": {
+    "@types/debug": "0.0.29",
+    "@types/lodash": "^4.14.38",
+    "@types/node": "^6.0.46",
+    "@types/source-map": "^0.1.29",
+    "@types/webpack": "^1.12.35",
     "ava": "^0.16.0",
     "greenkeeper-postpublish": "^1.0.1",
     "rimraf": "^2.5.4",
@@ -42,12 +47,6 @@
   },
   "dependencies": {
     "@easy-webpack/config-css": "^3.0.0",
-    "@types/debug": "^0.0.29",
-    "@types/lodash": "^4.14.37",
-    "@types/node": "^6.0.46",
-    "@types/source-map": "^0.1.28",
-    "@types/uglify-js": "^2.6.28",
-    "@types/webpack": "^1.12.35",
     "node-sass": "^3.10.1",
     "sass-loader": "^4.0.2"
   },
