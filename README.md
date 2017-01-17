@@ -55,9 +55,9 @@ generateConfig(
 ## Pass in options to sass compiler
 Please refer to [options of node-sass](https://github.com/sass/node-sass#options) for all available options.
 
-In webpack 1, pass in options can be achieved by adding a `sassLoader` property on webpack config.
+In Webpack 1, pass in options can be achieved by adding a `sassLoader` property on webpack config.
  
-In webpack2, a [loader-options-plugin](https://webpack.js.org/plugins/loader-options-plugin/) must be used to pass in options.
+In Webpack 2, a [loader-options-plugin](https://webpack.js.org/plugins/loader-options-plugin/) must be used to pass in options. Note that you may only use this plugin once with a given test, as it will override *all the options* once used and can cause problems.
 
 ```js
 const path = require('path');
@@ -79,6 +79,7 @@ generateConfig(
   require('@easy-webpack/config-sass')(),
   {
     plugins: [new webpack.LoaderOptionsPlugin({
+      test: /\.s[ac]ss$/i,
       options: {
         sassLoader: {
           includePaths: [path.resolve('node_modules/material-design-lite/src')]
