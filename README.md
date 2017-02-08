@@ -1,4 +1,6 @@
 # @easy-webpack/config-sass
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/easy-webpack/config-sass.svg)](https://greenkeeper.io/)
 [Sass](http://sass-lang.com/) is a CSS pre-processor. This configuration enable you to compile Sass file and include in your webpack bundle.
 
 [sass-loader](https://github.com/jtangelder/sass-loader) is used in this config.
